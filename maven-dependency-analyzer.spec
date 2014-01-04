@@ -1,4 +1,4 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 Name:           maven-dependency-analyzer
 Version:        1.4
 Release:        2.0%{?dist}
@@ -56,3 +56,34 @@ Summary:        API documentation for %{name}
 
 %files javadoc -f .mfiles-javadoc
 %doc LICENSE NOTICE
+
+%changelog
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Tue May 21 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.4-1
+- Update to upstream version 1.4
+
+* Tue Feb 19 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.3-7
+- Build with xmvn
+
+* Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* Wed Feb 06 2013 Java SIG <java-devel@lists.fedoraproject.org> - 1.3-5
+- Update for https://fedoraproject.org/wiki/Fedora_19_Maven_Rebuild
+- Replace maven BuildRequires with maven-local
+
+* Tue Jan 22 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 1.3-4
+- Replace asm2 R with objectweb-asm
+- Resolves: rhbz#902641
+
+* Fri Dec 21 2012 Tomas Radej <tradej@redhat.com> - 1.3-3
+- Added missing Provides/Obsoletes
+
+* Thu Dec 20 2012 Tomas Radej <tradej@redhat.com> - 1.3-2
+- Removed xmvn + reworked building without it
+
+* Tue Dec 18 2012 Tomas Radej <tradej@redhat.com> - 1.3-1
+- Initial package
+
