@@ -1,8 +1,9 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           maven-dependency-analyzer
-Version:        1.4
-Release:        2.0%{?dist}
+Version:        1.5
+Release:        1.1
 Summary:        Maven dependency analyzer
+Group:		Development/Java
 License:        ASL 2.0
 URL:            http://maven.apache.org/shared/maven-dependency-analyzer/
 Source0:        http://repo1.maven.org/maven2/org/apache/maven/shared/%{name}/%{version}/%{name}-%{version}-source-release.zip
@@ -12,7 +13,7 @@ BuildRequires:  maven-local
 BuildRequires:  mvn(asm:asm)
 BuildRequires:  mvn(junit:junit)
 BuildRequires:  mvn(org.apache.maven.plugin-testing:maven-plugin-testing-tools)
-BuildRequires:  mvn(org.apache.maven.shared:maven-shared-components)
+BuildRequires:  mvn(org.apache.maven.shared:maven-shared-components:pom:)
 BuildRequires:  mvn(org.apache.maven:maven-artifact)
 BuildRequires:  mvn(org.apache.maven:maven-model)
 BuildRequires:  mvn(org.apache.maven:maven-project)
