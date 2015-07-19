@@ -1,7 +1,7 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           maven-dependency-analyzer
 Version:        1.5
-Release:        1.1
+Release:        1.2
 Summary:        Maven dependency analyzer
 Group:		Development/Java
 License:        ASL 2.0
